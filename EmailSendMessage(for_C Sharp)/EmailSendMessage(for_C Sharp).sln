@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendMessage(for_C Sharp)", "EmailSendMessage(for_C Sharp).csproj", "{218591D7-1616-469B-8F16-3FF3164C5ED1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218591D7-1616-469B-8F16-3FF3164C5ED1}.Debug|x86.ActiveCfg = Debug|x86
+		{218591D7-1616-469B-8F16-3FF3164C5ED1}.Debug|x86.Build.0 = Debug|x86
+		{218591D7-1616-469B-8F16-3FF3164C5ED1}.Release|x86.ActiveCfg = Release|x86
+		{218591D7-1616-469B-8F16-3FF3164C5ED1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
