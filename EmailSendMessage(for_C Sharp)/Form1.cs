@@ -72,7 +72,7 @@ namespace EmailSendMessage_for_C_Sharp_
 
         private void Send_Click(object sender, EventArgs e)
         {
-            SendEmail("291519876@qq.com", "ilyas5137@163.com", "", "smtp.qq.com", "291519876", "recent1a", "this is a new test", "jsdlkfjlksdjflksdj");
+            SendEmail("xxxxx@qq.com", "xxxxx@163.com", "", "smtp.qq.com", "your qq number", "password", "this is a new test", "jsdlkfjlksdjflksdj");
         }
 
         private void label1_Click(object sender, EventArgs e)
