@@ -133,6 +133,7 @@
             this.txtPass.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtPass.Location = new System.Drawing.Point(19, 87);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(161, 26);
             this.txtPass.TabIndex = 3;
             // 
@@ -178,10 +179,11 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.Location = new System.Drawing.Point(14, 173);
+            this.txtTitle.Font = new System.Drawing.Font("ALKATIP Tor Tom", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(19, 173);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(497, 26);
+            this.txtTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTitle.Size = new System.Drawing.Size(492, 31);
             this.txtTitle.TabIndex = 11;
             // 
             // pictureBox8
@@ -234,16 +236,18 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(19, 199);
+            this.panel1.Location = new System.Drawing.Point(19, 210);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 289);
+            this.panel1.Size = new System.Drawing.Size(601, 278);
             this.panel1.TabIndex = 20;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, 28);
+            this.richTextBox1.Font = new System.Drawing.Font("ALKATIP Tor Tom", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 19);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(598, 272);
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox1.Size = new System.Drawing.Size(598, 281);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 
