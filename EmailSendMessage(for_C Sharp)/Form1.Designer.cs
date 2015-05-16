@@ -45,7 +45,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.txtFileName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Send = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,6 +55,7 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtServer = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -63,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,7 +98,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(532, 81);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(82, 31);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -152,11 +151,12 @@
             // 
             this.AddTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTo.Image = ((System.Drawing.Image)(resources.GetObject("AddTo.Image")));
-            this.AddTo.Location = new System.Drawing.Point(268, 85);
+            this.AddTo.Location = new System.Drawing.Point(268, 81);
             this.AddTo.Name = "AddTo";
             this.AddTo.Size = new System.Drawing.Size(75, 30);
             this.AddTo.TabIndex = 7;
             this.AddTo.UseVisualStyleBackColor = true;
+            this.AddTo.Click += new System.EventHandler(this.AddTo_Click);
             // 
             // pictureBox5
             // 
@@ -170,7 +170,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(555, 116);
+            this.pictureBox6.Location = new System.Drawing.Point(550, 167);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(67, 32);
             this.pictureBox6.TabIndex = 10;
@@ -179,7 +179,7 @@
             // txtTitle
             // 
             this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.Location = new System.Drawing.Point(19, 122);
+            this.txtTitle.Location = new System.Drawing.Point(14, 173);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(497, 26);
             this.txtTitle.TabIndex = 11;
@@ -187,16 +187,16 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(542, 154);
+            this.pictureBox8.Location = new System.Drawing.Point(538, 120);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(83, 35);
+            this.pictureBox8.Size = new System.Drawing.Size(82, 31);
             this.pictureBox8.TabIndex = 14;
             this.pictureBox8.TabStop = false;
             // 
             // txtFileName
             // 
             this.txtFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFileName.Location = new System.Drawing.Point(349, 158);
+            this.txtFileName.Location = new System.Drawing.Point(349, 120);
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(167, 26);
             this.txtFileName.TabIndex = 15;
@@ -204,21 +204,12 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(268, 159);
+            this.button1.Location = new System.Drawing.Point(268, 120);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 16;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(150, 159);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(90, 34);
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
             // 
             // Send
             // 
@@ -304,16 +295,25 @@
             this.label1.Text = "意见反馈";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtServer
+            // 
+            this.txtServer.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtServer.Location = new System.Drawing.Point(19, 125);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(161, 26);
+            this.txtServer.TabIndex = 22;
+            this.txtServer.Text = "smtp.xxx.com";
+            // 
             // Frm_ESG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 540);
+            this.Controls.Add(this.txtServer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.Send);
-            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtFileName);
             this.Controls.Add(this.pictureBox8);
@@ -335,7 +335,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_ESG";
-            this.Text = "EmailSendMessages";
+            this.Load += new System.EventHandler(this.Frm_ESG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -343,7 +343,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -368,7 +367,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.TextBox txtFileName;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button Send;
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.Panel panel1;
@@ -379,6 +377,7 @@
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtServer;
     }
 }
 

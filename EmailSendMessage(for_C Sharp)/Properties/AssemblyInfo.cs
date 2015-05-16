@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("EmailSendMessage(for_C Sharp)")]
+[assembly: AssemblyTitle("Email发送客户端")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Sky123.Org")]
+[assembly: AssemblyCompany("ilyas")]
 [assembly: AssemblyProduct("EmailSendMessage(for_C Sharp)")]
-[assembly: AssemblyCopyright("Copyright © Sky123.Org 2012")]
+[assembly: AssemblyCopyright("Copyright © ilyas 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

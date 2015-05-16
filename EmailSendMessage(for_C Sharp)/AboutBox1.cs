@@ -103,7 +103,7 @@ namespace EmailSendMessage_for_C_Sharp_
         private void okButton_Click(object sender, EventArgs e)
         {
             process1.StartInfo.FileName = "Explorer";
-            process1.StartInfo.Arguments = "http://alkuyi.cn/ilyas_xju";
+            process1.StartInfo.Arguments = "http://akapset.tumblr.com";
             process1.Start();
         }
     }

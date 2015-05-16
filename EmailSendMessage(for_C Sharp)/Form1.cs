@@ -6,6 +6,8 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net.Mime;
 namespace EmailSendMessage_for_C_Sharp_
 {
     public partial class Frm_ESG : Form
@@ -18,7 +20,7 @@ namespace EmailSendMessage_for_C_Sharp_
 
         private void AddFrom_Click(object sender, EventArgs e)
         {
-
+            Properties.Settings.Default.sender.Add(comFrom.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,25 +37,26 @@ namespace EmailSendMessage_for_C_Sharp_
 
         private void Quit_Click(object sender, EventArgs e)
         {
-            if( MessageBox.Show("Really want to quit it？","Prompted",MessageBoxButtons.YesNo ,MessageBoxIcon.Question )==DialogResult.Yes  )
+            if( MessageBox.Show("Really want to quit it？","Seriously ?",MessageBoxButtons.YesNo ,MessageBoxIcon.Question )==DialogResult.Yes  )
             Application.Exit();
         }
         private void SendEmail(string strFrom, string strTo, string strFileName, string strHost, string strID, string strPass, string strTitle, string strContet)
         {
-            System.Net.Mail.MailAddress @from = new System.Net.Mail.MailAddress(strFrom);
-            System.Net.Mail.MailAddress total = new System.Net.Mail.MailAddress(strTo);
-            System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage(@from, total);
+            MailAddress @from = new MailAddress(strFrom);
+            MailAddress total = new MailAddress(strTo);
+            MailMessage message = new MailMessage(@from, total);
+            //有没有附件
             if (strFileName != "")
             {
-                System.Net.Mail.Attachment myAtt = new System.Net.Mail.Attachment(strFileName, System.Net.Mime.MediaTypeNames.Application.Octet);
-                System.Net.Mime.ContentDisposition dispos = new System.Net.Mime.ContentDisposition();
+                Attachment myAtt = new Attachment(strFileName, MediaTypeNames.Application.Octet);
+                ContentDisposition dispos = new ContentDisposition();
                 dispos = myAtt.ContentDisposition;
                 dispos.CreationDate = File.GetCreationTime(strFileName);
                 dispos.ModificationDate = File.GetLastWriteTime(strFileName);
                 dispos.ReadDate = File.GetLastAccessTime(strFileName);
                 message.Attachments.Add(myAtt);
             }
-            System.Net.Mail.SmtpClient clint = new System.Net.Mail.SmtpClient(strHost);
+            SmtpClient clint = new SmtpClient(strHost);
             clint.Credentials = new System.Net.NetworkCredential(strID, strPass);
             message.Subject = strTitle;
             message.Body = strContet;
@@ -63,22 +66,41 @@ namespace EmailSendMessage_for_C_Sharp_
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Prompted", MessageBoxButtons.OK,MessageBoxIcon.Hand  );
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK,MessageBoxIcon.Hand  );
                 isError = true;
                 return;
             }
-            MessageBox.Show("Sent successfully!", "Prompted", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            MessageBox.Show("Sent successfully!", "Surprise", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
         private void Send_Click(object sender, EventArgs e)
         {
-            SendEmail("xxxxx@qq.com", "xxxxx@163.com", "", "smtp.qq.com", "your qq number", "password", "this is a new test", "jsdlkfjlksdjflksdj");
+            SendEmail(comFrom.Text,comTo.Text,txtFileName.Text,txtServer.Text, txtID.Text, txtPass.Text,txtTitle.Text,richTextBox1.Text);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             AboutBox1 ab = new AboutBox1();
             ab.ShowDialog();
+        }
+
+        private void AddTo_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.receiver.Add(comTo.Text);
+        }
+
+        private void Frm_ESG_Load(object sender, EventArgs e)
+        {
+         
+            foreach (string st in Properties.Settings.Default.sender)
+            { 
+                comFrom.Items.Add(st);
+            }
+            
+            foreach (string st in Properties.Settings.Default.receiver)
+            {
+                comTo.Items.Add(st);
+            }
         }
     }
 }

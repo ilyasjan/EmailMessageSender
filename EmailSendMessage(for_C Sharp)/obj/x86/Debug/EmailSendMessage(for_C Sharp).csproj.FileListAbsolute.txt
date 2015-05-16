@@ -12,3 +12,18 @@ D:\Projects\项目\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\o
 D:\Projects\项目\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).application
 D:\Projects\项目\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage_for_C_Sharp_.AboutBox1.resources
 D:\Projects\项目\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).csproj.GenerateResource.Cache
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).exe
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).pdb
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage_for_C_Sharp_.AboutBox1.resources
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage_for_C_Sharp_.Frm_ESG.resources
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage_for_C_Sharp_.Properties.Resources.resources
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).csproj.GenerateResource.Cache
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\bin\Debug\EmailSendMessage(for_C Sharp).exe.manifest
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\bin\Debug\EmailSendMessage(for_C Sharp).application
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\bin\Debug\EmailSendMessage(for_C Sharp).exe
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\bin\Debug\EmailSendMessage(for_C Sharp).pdb
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).TrustInfo.xml
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).exe.manifest
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).application
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\bin\Debug\EmailSendMessage(for_C Sharp).exe.config
+X:\Projects\2010\练习\EmailSendMessage(for_C Sharp)\EmailSendMessage(for_C Sharp)\obj\x86\Debug\EmailSendMessage(for_C Sharp).csprojResolveAssemblyReference.cache
